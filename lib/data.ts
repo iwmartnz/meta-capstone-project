@@ -1,5 +1,5 @@
 export const headerData = {
-  logo: "/icons/logo.svg",
+  logo: "/icons/logolarge.svg",
   menuIcon: "/icons/menu.svg",
   routes: [
     { id: 1, name: "Home", path: "/" },

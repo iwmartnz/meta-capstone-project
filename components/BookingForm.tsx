@@ -26,7 +26,7 @@ const formSchema = z.object({
   time: z.string({
     required_error: "A time is required.",
   }),
-  numberOfGuests: z
+  numberOfGuests: z.coerce
     .number()
     .min(0, { message: "Number of guests must be above 0" })
     .max(10, { message: "Maximum number of guest reached" }),

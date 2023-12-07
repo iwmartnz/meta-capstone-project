@@ -3,15 +3,15 @@ import { Inter, Karla } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Head from "next/head";
 const karla = Karla({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Little Lemon Restaurant",
   description: "Family owned Mediterranean restaurant",
   openGraph: {
-    title: "Little Lemon Restaurant",
-    description: "Family owned Mediterranean restaurant",
+    title: "Our Menu",
+    description:
+      "Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.",
     url: "https://littlelemon.com",
     siteName: "Little Lemon",
     images: [

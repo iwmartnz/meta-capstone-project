@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Specials from "@/components/Specials";
 import Testimonials from "@/components/Testimonials";
 import { aboutData } from "@/lib/data";
-import Image from "next/image";
 
 export default function Home() {
   return (

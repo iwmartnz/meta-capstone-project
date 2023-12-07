@@ -1,7 +1,5 @@
 import { testimonialsData } from "@/lib/data";
-import { Star } from "lucide-react";
 import Image from "next/image";
-import Testimonial from "./Testimonial";
 
 export default function Testimonials() {
   let testimonial = testimonialsData[0];

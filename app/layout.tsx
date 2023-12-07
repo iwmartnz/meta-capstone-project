@@ -9,6 +9,21 @@ const karla = Karla({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Little Lemon Restaurant",
   description: "Family owned Mediterranean restaurant",
+  openGraph: {
+    title: "Little Lemon Restaurant",
+    description: "Family owned Mediterranean restaurant",
+    url: "https://littlelemon.com",
+    siteName: "Little Lemon",
+    images: [
+      {
+        url: "https://littlelemon.com",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -18,15 +33,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="logo.png" />
-        <meta property="og:url" content="https://littlelemon/" />
-        <meta
-          property="og:description"
-          content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist."
-        />
-      </Head>
       <body className={karla.className}>
         <Header />
         {children}
